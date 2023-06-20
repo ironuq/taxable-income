@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#calc-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#income {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#calculate-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 24px;
+    color: blue;
+}

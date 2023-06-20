@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>個人の課税所得計算ツール</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="calc-container">
+        <h1>個人の課税所得計算ツール</h1>
+        <input type="number" id="property-income" placeholder="不動産所得を入力" />
+        <input type="number" id="salary-income" placeholder="給与所得を入力" />
+        <input type="number" id="other-income" placeholder="その他の所得を入力" />
+        <input type="number" id="property-expenses" placeholder="不動産投資に関連する経費を入力" />
+        <input type="number" id="insurance-deduction" placeholder="社会保険料を入力" />
+        <input type="number" id="life-insurance-deduction" placeholder="生命保険料を入力" />
+        <input type="number" id="earthquake-insurance-deduction" placeholder="地震保険料を入力" />
+        <button id="calculate-btn">計算する</button>
+        <h2 id="result"></h2>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
