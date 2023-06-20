@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>個人の課税所得計算ツール</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>課税所得計算ツール</title>
+    <style>
+        input[type="number"] {
+            width: 150px;
+        }
+        .input-section {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div id="calc-container">
-        <h1>個人の課税所得計算ツール</h1>
-        <input type="number" id="property-income" placeholder="不動産所得を入力" />
-        <input type="number" id="salary-income" placeholder="給与所得を入力" />
-        <input type="number" id="other-income" placeholder="その他の所得を入力" />
-        <input type="number" id="property-expenses" placeholder="不動産投資に関連する経費を入力" />
-        <input type="number" id="insurance-deduction" placeholder="社会保険料を入力" />
-        <input type="number" id="life-insurance-deduction" placeholder="生命保険料を入力" />
-        <input type="number" id="earthquake-insurance-deduction" placeholder="地震保険料を入力" />
-        <button id="calculate-btn">計算する</button>
-        <h2 id="result"></h2>
+    <h1>課税所得計算ツール</h1>
+    <div class="input-section">
+        <label for="salary">給与所得:</label>
+        <input type="number" id="salary">
     </div>
-<script src="script.js"></script>
+    <div class="input-section">
+        <label for="propertyIncome">不動産所得:</label>
+        <input type="number" id="propertyIncome">
+    </div>
+    <div class="input-section">
+        <label for="propertyExpenses">不動産投資に関連する経費:</label>
+        <input type="number" id="propertyExpenses">
+    </div>
+    <div class="input-section">
+        <label for="otherIncome">その他の所得:</label>
+        <input type="number" id="otherIncome">
+    </div>
+    <div class="input-section">
+        <label for="socialInsurance">社会保険料:</label>
+        <input type="number" id="socialInsurance">
+    </div>
+    <div class="input-section">
+        <label for="lifeInsurance">生命保険料:</label>
+        <input type="number" id="lifeInsurance">
+    </div>
+    <div class="input-section">
+        <label for="earthquakeInsurance">地震保険料:</label>
+        <input type="number" id="earthquakeInsurance">
+    </div>
+    <button onclick="calculateTaxableIncome()">課税所得を計算</button>
+    <h2 id="result"></h2>
+
+    <script src="calculate.js"></script>
 </body>
 </html>
